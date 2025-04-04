@@ -12,7 +12,7 @@ import { useCartStore } from "@/hooks/useCartStore";
 const NavIcons = () => {
   const [activePopup, setActivePopup] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [notifications, setNotifications] = useState([]);
+  const [notifications, setNotifications] = useState<{ message: string }[]>([]);
   const router = useRouter();
   const pathName = usePathname();
   const wixClient = useWixClient();
