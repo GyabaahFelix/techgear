@@ -20,13 +20,17 @@ const ProfilePage = async () => {
     }
 
     // Fetch orders safely
-    let orderRes = { orders: [] };
+    let orderRes: { orders: { _id: string; priceSummary?: { subtotal?: { amount: number } }; _createdDate?: string; status: string }[] } = { orders: [] };
     try {
-      orderRes = await wixClient.orders.searchOrders({
+      const rawOrderRes = await wixClient.orders.searchOrders({
         search: {
           filter: { "buyerInfo.contactId": { $eq: user.member.contactId } },
         },
       });
+
+      orderRes.orders = rawOrderRes.orders.filter(
+        (order) => order._id && typeof order._id === "string"
+      ) as { _id: string; priceSummary?: { subtotal?: { amount: number } }; _createdDate?: string; status: string }[];
     } catch (error) {
       console.error("Error fetching orders:", error);
     }
