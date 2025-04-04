@@ -10,7 +10,7 @@ import gsap from "gsap";
 const ITEMS_PER_PAGE = 4;
 
 const CategoryList = () => {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<(typeof categories[0] | null)[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef(null);
 
@@ -64,7 +64,7 @@ const CategoryList = () => {
   });
 
   // Ensure categories always render in multiples of 4
-  const displayedCategories = [...categories.slice(currentIndex, currentIndex + ITEMS_PER_PAGE)];
+  const displayedCategories: (typeof categories[0] | null)[] = [...categories.slice(currentIndex, currentIndex + ITEMS_PER_PAGE)];
   while (displayedCategories.length < ITEMS_PER_PAGE) {
     displayedCategories.push(null);
   }
