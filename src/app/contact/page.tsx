@@ -67,10 +67,10 @@ const Contact = () => {
           <div className="flex items-center gap-4 mb-4">
             <FaEnvelope className="text-blue-500 text-2xl" />
             <a
-              href="mailto:techgear@gmail.com"
+              href="mailto:techgeargh@gmail.com"
               className="hover:text-blue-600 transition"
             >
-              techgear@gmail.com
+              techgeargh@gmail.com
             </a>
           </div>
 

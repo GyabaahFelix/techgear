@@ -34,6 +34,9 @@ const Navbar = () => {
         <Link href="/contact" className="text-base md:text-lg font-semibold hover:text-blue-600 transition">
           Contact
         </Link>
+        <Link href="/about" className="text-base md:text-lg font-semibold hover:text-blue-600 transition">
+          About
+        </Link>
       </div>
 
       {/* RIGHT - MENU & NAV ICONS */}

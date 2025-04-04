@@ -17,8 +17,8 @@ const Footer = () => {
             Arthur Junction, Race Course Road <br />
             Accra, Ghana
           </p>
-          <span className="font-semibold">support@techgeargh.com</span>
-          <span className="font-semibold">+233 (0) 59 123 4567</span>
+          <span className="font-semibold">techgeargh@gmail.com</span>
+          <span className="font-semibold">024 909 8850</span>
           <div className="mt-4 font-semibold">Follow us on</div>
           <div className="flex gap-6 mt-2">
             <a href="https://www.facebook.com/TechGearOfficial" target="_blank" rel="noopener noreferrer">
@@ -44,28 +44,27 @@ const Footer = () => {
           <div className="flex flex-col">
             <h1 className="font-medium text-lg">COMPANY</h1>
             <div className="flex flex-col gap-6">
-              <Link href="">About TechGear</Link>
-              <Link href="">Contact Us</Link>
+              <Link href="/about">About TechGear</Link>
+              <Link href="/contact">Contact Us</Link>
               <Link href="">Become a Partner</Link>
             </div>
           </div>
           <div className="flex flex-col">
             <h1 className="font-medium text-lg">SHOP</h1>
             <div className="flex flex-col gap-6">
-              <Link href="">Laptops & PCs</Link>
-              <Link href="">TVs & Audio</Link>
-              <Link href="">Gaming Gear</Link>
-              <Link href="">Smart Home</Link>
+              <Link href="/list?cat=all-products">Laptops & PCs</Link>
+              <Link href="/list?cat=all-products">TVs & Audio</Link>
+              <Link href="/list?cat=all-products">Gaming Gear</Link>
+              <Link href="/list?cat=all-products">Smart Home</Link>
             </div>
           </div>
           <div className="flex flex-col">
             <h1 className="font-medium text-lg">SUPPORT</h1>
             <div className="flex flex-col gap-6">
-              <Link href="">Help Center</Link>
-              <Link href="">Warranty & Returns</Link>
-              <Link href="">Store Locator</Link>
-              <Link href="">Terms & Conditions</Link>
-              <Link href="">Gift Cards</Link>
+              <Link href="/contact">Help Center</Link>
+              <Link href="/WarrantyAndReturns">Warranty & Returns</Link>
+              <Link href="/contact">Store Locator</Link>
+              <Link href="/TermsAndConditions">Terms & Conditions</Link>
             </div>
           </div>
         </div>
@@ -76,10 +75,7 @@ const Footer = () => {
           <p>
             Don’t miss out on the latest gadgets, promotions, and TechGear exclusive offers!
           </p>
-          <div className="flex">
-            <input type="text" placeholder="Enter your email" className="p-4 w-3/4" />
-            <button className="w-1/4 bg-blue-600 text-white">JOIN</button>
-          </div>
+         
           <span className="font-semibold">Secure Payments</span>
           <div className="grid grid-cols-3 gap-4 mt-4">
             <Image src="/mtn.png" alt="MTN Mobile Money" width={60} height={40} /> {/* NEW ICON */}
