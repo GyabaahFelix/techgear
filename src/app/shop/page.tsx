@@ -7,7 +7,20 @@ import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Shop = () => {
-  const [categories, setCategories] = useState([]);
+  interface Category {
+    _id: string;
+    name: string;
+    slug: string;
+    media?: {
+      mainMedia?: {
+        image?: {
+          url?: string;
+        };
+      };
+    };
+  }
+
+  const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const carouselRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
