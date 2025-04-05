@@ -6,9 +6,14 @@ import { useState, useEffect } from "react";
 
 const slides = [
   {
-    src: "/techgear4.jpg",
+    src: "/ofo1.jpg",
     message: "Welcome to TechGear – Your One-Stop Electronics Store",
   },
+  {
+    src: "/techgear4.jpg",
+    message: "Discover the Latest Gadgets at Unbeatable Prices",
+  },
+  
   {
     src: "/techgear2.jpg",
     message: "Power Your Productivity with Our Desktops",
@@ -27,7 +32,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 lg:px-16 mt-6">
+    <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4 lg:px-16 mt-2">
       {/* Slider Section */}
       <div className="relative w-full h-[500px] overflow-hidden rounded-xl">
         {/* Image Slider Section with Transition */}

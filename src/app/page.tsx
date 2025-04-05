@@ -10,7 +10,7 @@ import { Link } from "lucide-react";
 
 const HomePage = async () => {
   return (
-    <div className="">
+    <div className="pt-20">
       {/* ✅ HERO SECTION */}
       <Hero />
 

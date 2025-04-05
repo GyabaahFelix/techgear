@@ -46,7 +46,6 @@ const Footer = () => {
             <div className="flex flex-col gap-6">
               <Link href="/about">About TechGear</Link>
               <Link href="/contact">Contact Us</Link>
-              <Link href="">Become a Partner</Link>
             </div>
           </div>
           <div className="flex flex-col">

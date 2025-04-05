@@ -50,7 +50,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="mt-24 mb-48">
+    <div className="mt-2">
       {/* SLIDESHOW SECTION */}
       <div className="relative h-[calc(100vh-80px)] overflow-hidden">
         <div
@@ -296,7 +296,7 @@ const About = () => {
       {/* Closing Thank You Section */}
       <section className="py-16 px-6 lg:px-20 text-center bg-gradient-to-r from-yellow-50 to-pink-50">
         <h2 className="text-4xl font-bold text-gray-800">
-          Thank You for Choosing TechGear 💖
+          Thank You for Choosing TechGear👋🏾
         </h2>
         <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
           We’re beyond grateful to have you as part of our growing TechGear
