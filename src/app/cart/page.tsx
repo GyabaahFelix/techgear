@@ -46,7 +46,7 @@ const subtotal = cart.lineItems
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 mt-20">
       <h2 className="text-2xl font-bold mb-6">Shopping Cart</h2>
 
       {isLoading ? (
